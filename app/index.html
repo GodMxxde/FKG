@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Consultation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button data-screen="articles">Articles</button>
+        <button data-screen="chat">Chat</button>
+        <button data-screen="history">History</button>
+        <button data-screen="wellness">Wellness Tracker</button>
+    </nav>
+    <main>
+        <section id="articles" class="screen active">
+            <h1>Articles & News</h1>
+            <div id="articles-list">Loading...</div>
+        </section>
+        <section id="chat" class="screen">
+            <h1>Symptom Checker</h1>
+            <textarea id="symptoms" placeholder="Describe your symptoms"></textarea>
+            <button id="send">Send</button>
+            <pre id="chat-response"></pre>
+        </section>
+        <section id="history" class="screen">
+            <h1>History</h1>
+            <div id="history-list">No history yet.</div>
+        </section>
+        <section id="wellness" class="screen">
+            <h1>Daily Wellness</h1>
+            <label>
+                How do you feel today?
+                <input type="text" id="feeling"/>
+            </label>
+            <button id="log">Log</button>
+            <div id="log-history"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
